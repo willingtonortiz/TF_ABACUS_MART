@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "TF_ABACUS", "TF_ABACUS.dtproj", "{07AE767D-F216-420D-B720-B7C5B39031D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07AE767D-F216-420D-B720-B7C5B39031D7}.Development|Default.ActiveCfg = Development
+		{07AE767D-F216-420D-B720-B7C5B39031D7}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {147742F8-DC8D-45EF-AD81-933CCB6C1951}
+	EndGlobalSection
+EndGlobal
