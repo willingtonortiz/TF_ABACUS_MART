@@ -20,7 +20,7 @@ BEGIN TRANSACTION
    
     --Rango de fechas a generar: del 01/01/2016 al 31/12/2013
     SELECT @FechaDesde = CAST('20180101' AS date)
-	SELECT @FechaHasta = CAST('20201231' AS date)
+	SELECT @FechaHasta = CAST('20211231' AS date)
 
 	--Carga la variable @FechaEvaluada con el valor inicial de la @FechaDesde
 	SET @FechaEvaluada = @FechaDesde
