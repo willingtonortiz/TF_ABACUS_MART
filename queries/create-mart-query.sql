@@ -116,8 +116,14 @@ CREATE TABLE [dbo].[FACT_TransportesCuotaOrdenes](
 	[Sk_Fecha] [int] NOT NULL,
 	[Anio] [smallint] NOT NULL,
 	[NumMesAnio] [smallint] NOT NULL,
-	[OrdenesPrevistas] [int] NOT NULL
-)
+	[OrdenesPrevistas] [int] NOT NULL,
+	 CONSTRAINT [PK_FACT_TransportesCuotaOrdenes] PRIMARY KEY CLUSTERED 
+(
+	[Sk_Transporte] ASC,
+	[Anio] ASC,
+	[NumMesAnio] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
 
 -- Creating Foreign keys
 ALTER TABLE [dbo].[FACT_Orden] ADD CONSTRAINT FK_FACT_Orden_Sk_Cliente FOREIGN KEY (Sk_Cliente) REFERENCES [dbo].[Dim_Clientes] (Sk_Cliente)
