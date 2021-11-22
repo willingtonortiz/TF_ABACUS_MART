@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="152"
-  DTS:VersionGUID="{746C94CC-344A-411B-B3A5-0C42E7F32935}">
+  DTS:VersionBuild="163"
+  DTS:VersionGUID="{502E5C84-384E-47C4-A49F-5A3701F93531}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -154,11 +154,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Poblar Clientes\Grabar Dim_Clientes"
+              refId="Package\Poblar Clientes\Grabar Clientes"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
-              name="Grabar Dim_Clientes"
+              name="Grabar Clientes"
               usesDispositions="true"
               version="4">
               <properties>
@@ -211,7 +211,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Poblar Clientes\Grabar Dim_Clientes.Connections[OleDbConnection]"
+                  refId="Package\Poblar Clientes\Grabar Clientes.Connections[OleDbConnection]"
                   connectionManagerID="{21C635E8-F690-4F0D-87CA-3B30B24BA87A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost.BD_ABACUS_STAGE]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -219,41 +219,41 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Poblar Clientes\Grabar Dim_Clientes.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Poblar Clientes\Grabar Clientes.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Poblar Clientes\Grabar Dim_Clientes.Inputs[Entrada de destino de OLE DB].Columns[C_Referencia]"
+                      refId="Package\Poblar Clientes\Grabar Clientes.Inputs[Entrada de destino de OLE DB].Columns[C_Referencia]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="C_Referencia"
-                      externalMetadataColumnId="Package\Poblar Clientes\Grabar Dim_Clientes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Referencia]"
+                      externalMetadataColumnId="Package\Poblar Clientes\Grabar Clientes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Referencia]"
                       lineageId="Package\Poblar Clientes\Conversión de datos.Outputs[Salida de conversión de datos].Columns[C_Referencia]" />
                     <inputColumn
-                      refId="Package\Poblar Clientes\Grabar Dim_Clientes.Inputs[Entrada de destino de OLE DB].Columns[C_Cliente]"
+                      refId="Package\Poblar Clientes\Grabar Clientes.Inputs[Entrada de destino de OLE DB].Columns[C_Cliente]"
                       cachedDataType="wstr"
                       cachedLength="150"
                       cachedName="C_Cliente"
-                      externalMetadataColumnId="Package\Poblar Clientes\Grabar Dim_Clientes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
+                      externalMetadataColumnId="Package\Poblar Clientes\Grabar Clientes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
                       lineageId="Package\Poblar Clientes\Conversión de datos.Outputs[Salida de conversión de datos].Columns[C_Cliente]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Poblar Clientes\Grabar Dim_Clientes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
+                      refId="Package\Poblar Clientes\Grabar Clientes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
                       dataType="wstr"
                       length="150"
                       name="Nombre" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Clientes\Grabar Dim_Clientes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Referencia]"
+                      refId="Package\Poblar Clientes\Grabar Clientes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Referencia]"
                       dataType="wstr"
                       length="100"
                       name="Referencia" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Clientes\Grabar Dim_Clientes.Inputs[Entrada de destino de OLE DB].ExternalColumns[cliente_id]"
+                      refId="Package\Poblar Clientes\Grabar Clientes.Inputs[Entrada de destino de OLE DB].ExternalColumns[cliente_id]"
                       dataType="i4"
                       name="cliente_id" />
                   </externalMetadataColumns>
@@ -261,22 +261,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Poblar Clientes\Grabar Dim_Clientes.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Poblar Clientes\Grabar Clientes.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Poblar Clientes\Grabar Dim_Clientes.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Poblar Clientes\Grabar Clientes.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Poblar Clientes\Grabar Dim_Clientes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Poblar Clientes\Grabar Clientes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Poblar Clientes\Grabar Dim_Clientes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Poblar Clientes\Grabar Clientes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Poblar Clientes\Grabar Dim_Clientes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Poblar Clientes\Grabar Clientes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Poblar Clientes\Grabar Dim_Clientes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Poblar Clientes\Grabar Clientes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -968,7 +968,7 @@
           <paths>
             <path
               refId="Package\Poblar Clientes.Paths[Salida de conversión de datos]"
-              endId="Package\Poblar Clientes\Grabar Dim_Clientes.Inputs[Entrada de destino de OLE DB]"
+              endId="Package\Poblar Clientes\Grabar Clientes.Inputs[Entrada de destino de OLE DB]"
               name="Salida de conversión de datos"
               startId="Package\Poblar Clientes\Conversión de datos.Outputs[Salida de conversión de datos]" />
             <path
@@ -1078,11 +1078,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Poblar Estado_Ordenes\Destino de OLE DB"
+              refId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
-              name="Destino de OLE DB"
+              name="Grabar Estado_Ordenes"
               usesDispositions="true"
               version="4">
               <properties>
@@ -1135,7 +1135,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Connections[OleDbConnection]"
+                  refId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Connections[OleDbConnection]"
                   connectionManagerID="{21C635E8-F690-4F0D-87CA-3B30B24BA87A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost.BD_ABACUS_STAGE]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -1143,29 +1143,29 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[C_Estado]"
+                      refId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Inputs[Entrada de destino de OLE DB].Columns[C_Estado]"
                       cachedDataType="wstr"
                       cachedLength="32"
                       cachedName="C_Estado"
-                      externalMetadataColumnId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado]"
+                      externalMetadataColumnId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado]"
                       lineageId="Package\Poblar Estado_Ordenes\Conversión de datos.Outputs[Salida de conversión de datos].Columns[C_Estado]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado]"
+                      refId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estado]"
                       dataType="wstr"
                       length="32"
                       name="Estado" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[estado_orden_id]"
+                      refId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[estado_orden_id]"
                       dataType="i4"
                       name="estado_orden_id" />
                   </externalMetadataColumns>
@@ -1173,22 +1173,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1833,7 +1833,7 @@
           <paths>
             <path
               refId="Package\Poblar Estado_Ordenes.Paths[Salida de conversión de datos]"
-              endId="Package\Poblar Estado_Ordenes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              endId="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes.Inputs[Entrada de destino de OLE DB]"
               name="Salida de conversión de datos"
               startId="Package\Poblar Estado_Ordenes\Conversión de datos.Outputs[Salida de conversión de datos]" />
             <path
@@ -1859,7 +1859,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Poblar Fechas"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1960,11 +1960,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Poblar Mercancia\Destino de OLE DB"
+              refId="Package\Poblar Mercancia\Grabar Mercancia"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
-              name="Destino de OLE DB"
+              name="Grabar Mercancia"
               usesDispositions="true"
               version="4">
               <properties>
@@ -2017,7 +2017,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Poblar Mercancia\Destino de OLE DB.Connections[OleDbConnection]"
+                  refId="Package\Poblar Mercancia\Grabar Mercancia.Connections[OleDbConnection]"
                   connectionManagerID="{21C635E8-F690-4F0D-87CA-3B30B24BA87A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost.BD_ABACUS_STAGE]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -2025,29 +2025,29 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Poblar Mercancia\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Poblar Mercancia\Grabar Mercancia.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Poblar Mercancia\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[C_Resumen de Mercancia]"
+                      refId="Package\Poblar Mercancia\Grabar Mercancia.Inputs[Entrada de destino de OLE DB].Columns[C_Resumen de Mercancia]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="C_Resumen de Mercancia"
-                      externalMetadataColumnId="Package\Poblar Mercancia\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Resumen_Mercancia]"
+                      externalMetadataColumnId="Package\Poblar Mercancia\Grabar Mercancia.Inputs[Entrada de destino de OLE DB].ExternalColumns[Resumen_Mercancia]"
                       lineageId="Package\Poblar Mercancia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[C_Resumen de Mercancia]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Poblar Mercancia\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Resumen_Mercancia]"
+                      refId="Package\Poblar Mercancia\Grabar Mercancia.Inputs[Entrada de destino de OLE DB].ExternalColumns[Resumen_Mercancia]"
                       dataType="wstr"
                       length="100"
                       name="Resumen_Mercancia" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Mercancia\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[mercancia_id]"
+                      refId="Package\Poblar Mercancia\Grabar Mercancia.Inputs[Entrada de destino de OLE DB].ExternalColumns[mercancia_id]"
                       dataType="i4"
                       name="mercancia_id" />
                   </externalMetadataColumns>
@@ -2055,22 +2055,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Poblar Mercancia\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Poblar Mercancia\Grabar Mercancia.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Poblar Mercancia\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Poblar Mercancia\Grabar Mercancia.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Poblar Mercancia\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Poblar Mercancia\Grabar Mercancia.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Poblar Mercancia\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Poblar Mercancia\Grabar Mercancia.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Poblar Mercancia\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Poblar Mercancia\Grabar Mercancia.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Poblar Mercancia\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Poblar Mercancia\Grabar Mercancia.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2715,7 +2715,7 @@
           <paths>
             <path
               refId="Package\Poblar Mercancia.Paths[Salida de conversión de datos]"
-              endId="Package\Poblar Mercancia\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              endId="Package\Poblar Mercancia\Grabar Mercancia.Inputs[Entrada de destino de OLE DB]"
               name="Salida de conversión de datos"
               startId="Package\Poblar Mercancia\Conversión de datos.Outputs[Salida de conversión de datos]" />
             <path
@@ -4521,11 +4521,11 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Poblar Ordenes\Grabar FACT_Orden"
+              refId="Package\Poblar Ordenes\Grabar Ordenes"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
-              name="Grabar FACT_Orden"
+              name="Grabar Ordenes"
               usesDispositions="true"
               version="4">
               <properties>
@@ -4578,7 +4578,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Poblar Ordenes\Grabar FACT_Orden.Connections[OleDbConnection]"
+                  refId="Package\Poblar Ordenes\Grabar Ordenes.Connections[OleDbConnection]"
                   connectionManagerID="{21C635E8-F690-4F0D-87CA-3B30B24BA87A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost.BD_ABACUS_STAGE]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -4586,209 +4586,209 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[CIF]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[CIF]"
                       cachedDataType="r8"
                       cachedName="CIF"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cif]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cif]"
                       lineageId="Package\Poblar Ordenes\Columna derivada.Outputs[Salida de columna derivada].Columns[CIF]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[Veces]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[Veces]"
                       cachedDataType="i4"
                       cachedName="Veces"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Veces]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Veces]"
                       lineageId="Package\Poblar Ordenes\Columna derivada.Outputs[Salida de columna derivada].Columns[Veces]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[Val#Incoterm US$]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[Val#Incoterm US$]"
                       cachedDataType="r8"
                       cachedName="Val#Incoterm US$"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Valor_Incoterm]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Valor_Incoterm]"
                       lineageId="Package\Poblar Ordenes\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Val#Incoterm US$]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[Flete US$]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[Flete US$]"
                       cachedDataType="r8"
                       cachedName="Flete US$"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Flete]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Flete]"
                       lineageId="Package\Poblar Ordenes\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Flete US$]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[Fob US$]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[Fob US$]"
                       cachedDataType="r8"
                       cachedName="Fob US$"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fob]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fob]"
                       lineageId="Package\Poblar Ordenes\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Fob US$]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[Seguro US$]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[Seguro US$]"
                       cachedDataType="r8"
                       cachedName="Seguro US$"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Seguro]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Seguro]"
                       lineageId="Package\Poblar Ordenes\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Seguro US$]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[Peso Bruto]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[Peso Bruto]"
                       cachedDataType="r8"
                       cachedName="Peso Bruto"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Peso_Bruto]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Peso_Bruto]"
                       lineageId="Package\Poblar Ordenes\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Peso Bruto]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[Peso Neto]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[Peso Neto]"
                       cachedDataType="r8"
                       cachedName="Peso Neto"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Peso_Neto]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Peso_Neto]"
                       lineageId="Package\Poblar Ordenes\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Peso Neto]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[C_Nro_Orden]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[C_Nro_Orden]"
                       cachedDataType="wstr"
                       cachedLength="32"
                       cachedName="C_Nro_Orden"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nro_Orden]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nro_Orden]"
                       lineageId="Package\Poblar Ordenes\Conversión de datos.Outputs[Salida de conversión de datos].Columns[C_Nro_Orden]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[cliente_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[cliente_id]"
                       cachedDataType="i4"
                       cachedName="cliente_id"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[cliente_id]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[cliente_id]"
                       lineageId="Package\Poblar Ordenes\Búsqueda Cliente.Outputs[Salida de entradas coincidentes de búsqueda].Columns[cliente_id]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[puerto_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[puerto_id]"
                       cachedDataType="i4"
                       cachedName="puerto_id"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[puerto_id]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[puerto_id]"
                       lineageId="Package\Poblar Ordenes\Búsqueda Puerto.Outputs[Salida de entradas coincidentes de búsqueda].Columns[puerto_id]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[fecha_orden_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[fecha_orden_id]"
                       cachedDataType="i4"
                       cachedName="fecha_orden_id"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[fecha_Orden_id]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[fecha_Orden_id]"
                       lineageId="Package\Poblar Ordenes\Búsqueda Fecha_Orden.Outputs[Salida de entradas coincidentes de búsqueda].Columns[fecha_orden_id]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[fecha_factura_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[fecha_factura_id]"
                       cachedDataType="i4"
                       cachedName="fecha_factura_id"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[fecha_Factura_id]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[fecha_Factura_id]"
                       lineageId="Package\Poblar Ordenes\Búsqueda Fecha_Factura.Outputs[Salida de entradas coincidentes de búsqueda].Columns[fecha_factura_id]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[transporte_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[transporte_id]"
                       cachedDataType="i4"
                       cachedName="transporte_id"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[transporte_id]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[transporte_id]"
                       lineageId="Package\Poblar Ordenes\Búsqueda Transporte.Outputs[Salida de entradas coincidentes de búsqueda].Columns[transporte_id]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[estado_orden_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[estado_orden_id]"
                       cachedDataType="i4"
                       cachedName="estado_orden_id"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[estado_orden_id]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[estado_orden_id]"
                       lineageId="Package\Poblar Ordenes\Búsqueda Estado_Ordenes.Outputs[Salida de entradas coincidentes de búsqueda].Columns[estado_orden_id]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[tipo_transporte_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[tipo_transporte_id]"
                       cachedDataType="i4"
                       cachedName="tipo_transporte_id"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[tipo_Transporte_id]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[tipo_Transporte_id]"
                       lineageId="Package\Poblar Ordenes\Búsqueda Tipo_Transporte.Outputs[Salida de entradas coincidentes de búsqueda].Columns[tipo_transporte_id]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[mercancia_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[mercancia_id]"
                       cachedDataType="i4"
                       cachedName="mercancia_id"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[mercancia_id]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[mercancia_id]"
                       lineageId="Package\Poblar Ordenes\Búsqueda Mercancia.Outputs[Salida de entradas coincidentes de búsqueda].Columns[mercancia_id]" />
                     <inputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].Columns[rango_cif_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].Columns[rango_cif_id]"
                       cachedDataType="i4"
                       cachedName="rango_cif_id"
-                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[rango_CIF_id]"
+                      externalMetadataColumnId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[rango_CIF_id]"
                       lineageId="Package\Poblar Ordenes\Búsqueda Rango_CIF.Outputs[Salida de entradas coincidentes de búsqueda].Columns[rango_cif_id]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nro_Orden]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nro_Orden]"
                       dataType="wstr"
                       length="32"
                       name="Nro_Orden" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Valor_Incoterm]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Valor_Incoterm]"
                       dataType="numeric"
                       name="Valor_Incoterm"
                       precision="12"
                       scale="3" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Flete]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Flete]"
                       dataType="numeric"
                       name="Flete"
                       precision="12"
                       scale="3" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fob]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fob]"
                       dataType="numeric"
                       name="Fob"
                       precision="12"
                       scale="3" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Seguro]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Seguro]"
                       dataType="numeric"
                       name="Seguro"
                       precision="12"
                       scale="3" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cif]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cif]"
                       dataType="numeric"
                       name="Cif"
                       precision="12"
                       scale="3" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Veces]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Veces]"
                       dataType="i4"
                       name="Veces" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Peso_Bruto]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Peso_Bruto]"
                       dataType="numeric"
                       name="Peso_Bruto"
                       precision="12"
                       scale="3" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[Peso_Neto]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Peso_Neto]"
                       dataType="numeric"
                       name="Peso_Neto"
                       precision="12"
                       scale="3" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[cliente_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[cliente_id]"
                       dataType="i4"
                       name="cliente_id" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[puerto_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[puerto_id]"
                       dataType="i4"
                       name="puerto_id" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[fecha_Orden_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[fecha_Orden_id]"
                       dataType="i4"
                       name="fecha_Orden_id" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[fecha_Factura_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[fecha_Factura_id]"
                       dataType="i4"
                       name="fecha_Factura_id" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[transporte_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[transporte_id]"
                       dataType="i4"
                       name="transporte_id" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[estado_orden_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[estado_orden_id]"
                       dataType="i4"
                       name="estado_orden_id" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[tipo_Transporte_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[tipo_Transporte_id]"
                       dataType="i4"
                       name="tipo_Transporte_id" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[mercancia_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[mercancia_id]"
                       dataType="i4"
                       name="mercancia_id" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB].ExternalColumns[rango_CIF_id]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB].ExternalColumns[rango_CIF_id]"
                       dataType="i4"
                       name="rango_CIF_id" />
                   </externalMetadataColumns>
@@ -4796,22 +4796,22 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Poblar Ordenes\Grabar FACT_Orden.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Poblar Ordenes\Grabar Ordenes.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Poblar Ordenes\Grabar FACT_Orden.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Poblar Ordenes\Grabar Ordenes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Poblar Ordenes\Grabar FACT_Orden.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Poblar Ordenes\Grabar Ordenes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Poblar Ordenes\Grabar FACT_Orden.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Poblar Ordenes\Grabar Ordenes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -5649,7 +5649,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
               startId="Package\Poblar Ordenes\Búsqueda Estado_Ordenes.Outputs[Salida de entradas coincidentes de búsqueda]" />
             <path
               refId="Package\Poblar Ordenes.Paths[Salida de entradas coincidentes de búsqueda8]"
-              endId="Package\Poblar Ordenes\Grabar FACT_Orden.Inputs[Entrada de destino de OLE DB]"
+              endId="Package\Poblar Ordenes\Grabar Ordenes.Inputs[Entrada de destino de OLE DB]"
               name="Salida de entradas coincidentes de búsqueda"
               startId="Package\Poblar Ordenes\Búsqueda Rango_CIF.Outputs[Salida de entradas coincidentes de búsqueda]" />
             <path
@@ -5754,11 +5754,11 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Poblar Puertos\Destino de OLE DB"
+              refId="Package\Poblar Puertos\Grabar Puertos"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
-              name="Destino de OLE DB"
+              name="Grabar Puertos"
               usesDispositions="true"
               version="4">
               <properties>
@@ -5811,7 +5811,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Poblar Puertos\Destino de OLE DB.Connections[OleDbConnection]"
+                  refId="Package\Poblar Puertos\Grabar Puertos.Connections[OleDbConnection]"
                   connectionManagerID="{21C635E8-F690-4F0D-87CA-3B30B24BA87A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost.BD_ABACUS_STAGE]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -5819,29 +5819,29 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Poblar Puertos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Poblar Puertos\Grabar Puertos.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Poblar Puertos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[C_Puerto Embarque]"
+                      refId="Package\Poblar Puertos\Grabar Puertos.Inputs[Entrada de destino de OLE DB].Columns[C_Puerto Embarque]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="C_Puerto Embarque"
-                      externalMetadataColumnId="Package\Poblar Puertos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
+                      externalMetadataColumnId="Package\Poblar Puertos\Grabar Puertos.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
                       lineageId="Package\Poblar Puertos\Conversión de datos.Outputs[Salida de conversión de datos].Columns[C_Puerto Embarque]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Poblar Puertos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
+                      refId="Package\Poblar Puertos\Grabar Puertos.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
                       dataType="wstr"
                       length="50"
                       name="Nombre" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Puertos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[puerto_id]"
+                      refId="Package\Poblar Puertos\Grabar Puertos.Inputs[Entrada de destino de OLE DB].ExternalColumns[puerto_id]"
                       dataType="i4"
                       name="puerto_id" />
                   </externalMetadataColumns>
@@ -5849,22 +5849,22 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Poblar Puertos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Poblar Puertos\Grabar Puertos.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Poblar Puertos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Poblar Puertos\Grabar Puertos.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Poblar Puertos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Poblar Puertos\Grabar Puertos.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Poblar Puertos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Poblar Puertos\Grabar Puertos.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Poblar Puertos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Poblar Puertos\Grabar Puertos.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Poblar Puertos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Poblar Puertos\Grabar Puertos.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -6509,7 +6509,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
           <paths>
             <path
               refId="Package\Poblar Puertos.Paths[Salida de conversión de datos]"
-              endId="Package\Poblar Puertos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              endId="Package\Poblar Puertos\Grabar Puertos.Inputs[Entrada de destino de OLE DB]"
               name="Salida de conversión de datos"
               startId="Package\Poblar Puertos\Conversión de datos.Outputs[Salida de conversión de datos]" />
             <path
@@ -6535,7 +6535,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Poblar Rango_CIF"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -6641,11 +6641,11 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Poblar Tipo_Transporte\Destino de OLE DB"
+              refId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
-              name="Destino de OLE DB"
+              name="Grabar Tipo_Transporte"
               usesDispositions="true"
               version="4">
               <properties>
@@ -6698,7 +6698,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Connections[OleDbConnection]"
+                  refId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Connections[OleDbConnection]"
                   connectionManagerID="{21C635E8-F690-4F0D-87CA-3B30B24BA87A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost.BD_ABACUS_STAGE]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -6706,41 +6706,41 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Nombre]"
+                      refId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Inputs[Entrada de destino de OLE DB].Columns[Nombre]"
                       cachedDataType="wstr"
                       cachedLength="22"
                       cachedName="Nombre"
-                      externalMetadataColumnId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
+                      externalMetadataColumnId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
                       lineageId="Package\Poblar Tipo_Transporte\Columna derivada.Outputs[Salida de columna derivada].Columns[Nombre]" />
                     <inputColumn
-                      refId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Adu#Proc]"
+                      refId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Inputs[Entrada de destino de OLE DB].Columns[Adu#Proc]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Adu#Proc"
                       cachedSortKeyPosition="1"
-                      externalMetadataColumnId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Codigo]"
+                      externalMetadataColumnId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[Codigo]"
                       lineageId="Package\Poblar Tipo_Transporte\Ordenar.Outputs[Salida de ordenación].Columns[Adu#Proc]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Codigo]"
+                      refId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[Codigo]"
                       dataType="i4"
                       name="Codigo" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
+                      refId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
                       dataType="wstr"
                       length="50"
                       name="Nombre" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[tipo_transporte_id]"
+                      refId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[tipo_transporte_id]"
                       dataType="i4"
                       name="tipo_transporte_id" />
                   </externalMetadataColumns>
@@ -6748,22 +6748,22 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -7408,7 +7408,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
           <paths>
             <path
               refId="Package\Poblar Tipo_Transporte.Paths[Salida de columna derivada]"
-              endId="Package\Poblar Tipo_Transporte\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              endId="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte.Inputs[Entrada de destino de OLE DB]"
               name="Salida de columna derivada"
               startId="Package\Poblar Tipo_Transporte\Columna derivada.Outputs[Salida de columna derivada]" />
             <path
@@ -7545,11 +7545,11 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Poblar Transportes\Destino de OLE DB"
+              refId="Package\Poblar Transportes\Grabar Transportes"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
-              name="Destino de OLE DB"
+              name="Grabar Transportes"
               usesDispositions="true"
               version="4">
               <properties>
@@ -7602,7 +7602,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Poblar Transportes\Destino de OLE DB.Connections[OleDbConnection]"
+                  refId="Package\Poblar Transportes\Grabar Transportes.Connections[OleDbConnection]"
                   connectionManagerID="{21C635E8-F690-4F0D-87CA-3B30B24BA87A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost.BD_ABACUS_STAGE]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -7610,41 +7610,41 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Poblar Transportes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Poblar Transportes\Grabar Transportes.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Poblar Transportes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[C_Empresa de Transporte]"
+                      refId="Package\Poblar Transportes\Grabar Transportes.Inputs[Entrada de destino de OLE DB].Columns[C_Empresa de Transporte]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="C_Empresa de Transporte"
-                      externalMetadataColumnId="Package\Poblar Transportes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Empresa_Transporte]"
+                      externalMetadataColumnId="Package\Poblar Transportes\Grabar Transportes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Empresa_Transporte]"
                       lineageId="Package\Poblar Transportes\Conversión de datos.Outputs[Salida de conversión de datos].Columns[C_Empresa de Transporte]" />
                     <inputColumn
-                      refId="Package\Poblar Transportes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[C_RUC Trasporte]"
+                      refId="Package\Poblar Transportes\Grabar Transportes.Inputs[Entrada de destino de OLE DB].Columns[C_RUC Trasporte]"
                       cachedDataType="wstr"
                       cachedLength="20"
                       cachedName="C_RUC Trasporte"
-                      externalMetadataColumnId="Package\Poblar Transportes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Ruc_Transporte]"
+                      externalMetadataColumnId="Package\Poblar Transportes\Grabar Transportes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Ruc_Transporte]"
                       lineageId="Package\Poblar Transportes\Conversión de datos.Outputs[Salida de conversión de datos].Columns[C_RUC Trasporte]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Poblar Transportes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Empresa_Transporte]"
+                      refId="Package\Poblar Transportes\Grabar Transportes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Empresa_Transporte]"
                       dataType="wstr"
                       length="100"
                       name="Empresa_Transporte" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Transportes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Ruc_Transporte]"
+                      refId="Package\Poblar Transportes\Grabar Transportes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Ruc_Transporte]"
                       dataType="wstr"
                       length="20"
                       name="Ruc_Transporte" />
                     <externalMetadataColumn
-                      refId="Package\Poblar Transportes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[transporte_id]"
+                      refId="Package\Poblar Transportes\Grabar Transportes.Inputs[Entrada de destino de OLE DB].ExternalColumns[transporte_id]"
                       dataType="i4"
                       name="transporte_id" />
                   </externalMetadataColumns>
@@ -7652,22 +7652,22 @@ where [refTable].[Empresa_Transporte] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Poblar Transportes\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Poblar Transportes\Grabar Transportes.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Poblar Transportes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Poblar Transportes\Grabar Transportes.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Poblar Transportes\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Poblar Transportes\Grabar Transportes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Poblar Transportes\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Poblar Transportes\Grabar Transportes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Poblar Transportes\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Poblar Transportes\Grabar Transportes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Poblar Transportes\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Poblar Transportes\Grabar Transportes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -8359,7 +8359,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
           <paths>
             <path
               refId="Package\Poblar Transportes.Paths[Salida de conversión de datos]"
-              endId="Package\Poblar Transportes\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              endId="Package\Poblar Transportes\Grabar Transportes.Inputs[Entrada de destino de OLE DB]"
               name="Salida de conversión de datos"
               startId="Package\Poblar Transportes\Conversión de datos.Outputs[Salida de conversión de datos]" />
             <path
@@ -8542,15 +8542,15 @@ where [refTable].[Empresa_Transporte] = ?</property>
         <NodeLayout
           Size="171,42"
           Id="Package\Poblar Ordenes"
-          TopLeft="386.141025641026,418.769230769231" />
+          TopLeft="388.283882783883,419.483516483517" />
         <NodeLayout
           Size="172,42"
           Id="Package\Poblar Puertos"
           TopLeft="219.18315018315,179.364468864469" />
         <NodeLayout
-          Size="188,42"
+          Size="163,42"
           Id="Package\Poblar Rango_CIF"
-          TopLeft="656.950549450548,180.018315018315" />
+          TopLeft="673.379120879119,180.018315018315" />
         <NodeLayout
           Size="214,42"
           Id="Package\Poblar Tipo_Transporte"
@@ -8633,26 +8633,26 @@ where [refTable].[Empresa_Transporte] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="139.29120879121,197.404761904763"
+              EndConnector="141.434065934066,198.119047619048"
               Start="0,0"
-              End="139.29120879121,189.904761904763">
+              End="141.434065934066,190.619047619048">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,113.344893229598" />
+                    End="0,113.769491805992" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,113.344893229598"
-                    Point2="0,117.344893229598"
-                    Point3="4,117.344893229598" />
+                    Point1="0,113.769491805992"
+                    Point2="0,117.769491805992"
+                    Point3="4,117.769491805992" />
                   <mssgle:LineSegment
-                    End="135.29120879121,117.344893229598" />
+                    End="137.434065934066,117.769491805992" />
                   <mssgle:CubicBezierSegment
-                    Point1="135.29120879121,117.344893229598"
-                    Point2="139.29120879121,117.344893229598"
-                    Point3="139.29120879121,121.344893229598" />
+                    Point1="137.434065934066,117.769491805992"
+                    Point2="141.434065934066,117.769491805992"
+                    Point3="141.434065934066,121.769491805992" />
                   <mssgle:LineSegment
-                    End="139.29120879121,189.904761904763" />
+                    End="141.434065934066,190.619047619048" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8667,26 +8667,26 @@ where [refTable].[Empresa_Transporte] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="56.4700854700858,115.249084249085"
+              EndConnector="58.6129426129426,115.96336996337"
               Start="0,0"
-              End="56.4700854700858,107.749084249085">
+              End="58.6129426129426,108.46336996337">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,56.8467720958289" />
+                    End="0,57.2238855484137" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,56.8467720958289"
-                    Point2="0,60.8467720958289"
-                    Point3="4,60.8467720958289" />
+                    Point1="0,57.2238855484137"
+                    Point2="0,61.2238855484137"
+                    Point3="4,61.2238855484137" />
                   <mssgle:LineSegment
-                    End="52.4700854700858,60.8467720958289" />
+                    End="54.6129426129426,61.2238855484137" />
                   <mssgle:CubicBezierSegment
-                    Point1="52.4700854700858,60.8467720958289"
-                    Point2="56.4700854700858,60.8467720958289"
-                    Point3="56.4700854700858,64.8467720958289" />
+                    Point1="54.6129426129426,61.2238855484137"
+                    Point2="58.6129426129426,61.2238855484137"
+                    Point3="58.6129426129426,65.2238855484137" />
                   <mssgle:LineSegment
-                    End="56.4700854700858,107.749084249085" />
+                    End="58.6129426129426,108.46336996337" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8701,26 +8701,26 @@ where [refTable].[Empresa_Transporte] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-39.3931623931626,199.333333333334"
+              EndConnector="-37.2503052503054,200.04761904762"
               Start="0,0"
-              End="-39.3931623931626,191.833333333334">
+              End="-37.2503052503054,192.54761904762">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,101.239794168097" />
+                    End="0,101.616907620682" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,101.239794168097"
-                    Point2="0,105.239794168097"
-                    Point3="-4,105.239794168097" />
+                    Point1="0,101.616907620682"
+                    Point2="0,105.616907620682"
+                    Point3="-4,105.616907620682" />
                   <mssgle:LineSegment
-                    End="-35.3931623931626,105.239794168097" />
+                    End="-33.2503052503054,105.616907620682" />
                   <mssgle:CubicBezierSegment
-                    Point1="-35.3931623931626,105.239794168097"
-                    Point2="-39.3931623931626,105.239794168097"
-                    Point3="-39.3931623931626,109.239794168097" />
+                    Point1="-33.2503052503054,105.616907620682"
+                    Point2="-37.2503052503054,105.616907620682"
+                    Point3="-37.2503052503054,109.616907620682" />
                   <mssgle:LineSegment
-                    End="-39.3931623931626,191.833333333334" />
+                    End="-37.2503052503054,192.54761904762" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8735,26 +8735,26 @@ where [refTable].[Empresa_Transporte] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-145.38344988345,118.2668997669"
+              EndConnector="-143.240592740592,118.981185481185"
               Start="0,0"
-              End="-145.38344988345,110.7668997669">
+              End="-143.240592740592,111.481185481185">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,66.3023401858859" />
+                    End="0,66.7269387622801" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,66.3023401858859"
-                    Point2="0,70.3023401858859"
-                    Point3="-4,70.3023401858859" />
+                    Point1="0,66.7269387622801"
+                    Point2="0,70.7269387622801"
+                    Point3="-4,70.7269387622801" />
                   <mssgle:LineSegment
-                    End="-141.38344988345,70.3023401858859" />
+                    End="-139.240592740592,70.7269387622801" />
                   <mssgle:CubicBezierSegment
-                    Point1="-141.38344988345,70.3023401858859"
-                    Point2="-145.38344988345,70.3023401858859"
-                    Point3="-145.38344988345,74.3023401858859" />
+                    Point1="-139.240592740592,70.7269387622801"
+                    Point2="-143.240592740592,70.7269387622801"
+                    Point3="-143.240592740592,74.7269387622801" />
                   <mssgle:LineSegment
-                    End="-145.38344988345,110.7668997669" />
+                    End="-143.240592740592,111.481185481185" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8765,30 +8765,30 @@ where [refTable].[Empresa_Transporte] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 14]"
-          TopLeft="750.950549450548,222.018315018315">
+          TopLeft="754.879120879119,222.018315018315">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-234.031746031745,196.750915750916"
+              EndConnector="-235.817460317458,197.465201465202"
               Start="0,0"
-              End="-234.031746031745,189.250915750916">
+              End="-235.817460317458,189.965201465202">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,129.804533513328" />
+                    End="0,130.290298300904" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,129.804533513328"
-                    Point2="0,133.804533513328"
-                    Point3="-4,133.804533513328" />
+                    Point1="0,130.290298300904"
+                    Point2="0,134.290298300904"
+                    Point3="-4,134.290298300904" />
                   <mssgle:LineSegment
-                    End="-230.031746031745,133.804533513328" />
+                    End="-231.817460317458,134.290298300904" />
                   <mssgle:CubicBezierSegment
-                    Point1="-230.031746031745,133.804533513328"
-                    Point2="-234.031746031745,133.804533513328"
-                    Point3="-234.031746031745,137.804533513328" />
+                    Point1="-231.817460317458,134.290298300904"
+                    Point2="-235.817460317458,134.290298300904"
+                    Point3="-235.817460317458,138.290298300904" />
                   <mssgle:LineSegment
-                    End="-234.031746031745,189.250915750916" />
+                    End="-235.817460317458,189.965201465202" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8803,26 +8803,26 @@ where [refTable].[Empresa_Transporte] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-322.700854700854,118.24358974359"
+              EndConnector="-320.557997557997,118.957875457875"
               Start="0,0"
-              End="-322.700854700854,110.74358974359">
+              End="-320.557997557997,111.457875457875">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,89.9477979428936" />
+                    End="0,90.5153176714864" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,89.9477979428936"
-                    Point2="0,93.9477979428936"
-                    Point3="-4,93.9477979428936" />
+                    Point1="0,90.5153176714864"
+                    Point2="0,94.5153176714864"
+                    Point3="-4,94.5153176714864" />
                   <mssgle:LineSegment
-                    End="-318.700854700854,93.9477979428936" />
+                    End="-316.557997557997,94.5153176714864" />
                   <mssgle:CubicBezierSegment
-                    Point1="-318.700854700854,93.9477979428936"
-                    Point2="-322.700854700854,93.9477979428936"
-                    Point3="-322.700854700854,97.9477979428936" />
+                    Point1="-316.557997557997,94.5153176714864"
+                    Point2="-320.557997557997,94.5153176714864"
+                    Point3="-320.557997557997,98.5153176714864" />
                   <mssgle:LineSegment
-                    End="-322.700854700854,110.74358974359" />
+                    End="-320.557997557997,111.457875457875" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8969,13 +8969,13 @@ where [refTable].[Empresa_Transporte] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 6]"
-          TopLeft="519.236874236873,65.7271062271061">
+          TopLeft="519.236874236874,65.7271062271061">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="231.713675213675,114.291208791209"
+              EndConnector="235.642246642246,114.291208791209"
               Start="0,0"
-              End="231.713675213675,106.791208791209">
+              End="235.642246642246,106.791208791209">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -8986,13 +8986,13 @@ where [refTable].[Empresa_Transporte] = ?</property>
                     Point2="0,36.632476370318"
                     Point3="4,36.632476370318" />
                   <mssgle:LineSegment
-                    End="227.713675213675,36.632476370318" />
+                    End="231.642246642246,36.632476370318" />
                   <mssgle:CubicBezierSegment
-                    Point1="227.713675213675,36.632476370318"
-                    Point2="231.713675213675,36.632476370318"
-                    Point3="231.713675213675,40.632476370318" />
+                    Point1="231.642246642246,36.632476370318"
+                    Point2="235.642246642246,36.632476370318"
+                    Point3="235.642246642246,40.632476370318" />
                   <mssgle:LineSegment
-                    End="231.713675213675,106.791208791209" />
+                    End="235.642246642246,106.791208791209" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9041,26 +9041,26 @@ where [refTable].[Empresa_Transporte] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="298.393162393163,195.397435897436"
+              EndConnector="300.53601953602,196.111721611722"
               Start="0,0"
-              End="298.393162393163,187.897435897436">
+              End="300.53601953602,188.611721611722">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,151.248659703745" />
+                    End="0,151.816179432339" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,151.248659703745"
-                    Point2="0,155.248659703745"
-                    Point3="4,155.248659703745" />
+                    Point1="0,151.816179432339"
+                    Point2="0,155.816179432339"
+                    Point3="4,155.816179432339" />
                   <mssgle:LineSegment
-                    End="294.393162393163,155.248659703745" />
+                    End="296.53601953602,155.816179432339" />
                   <mssgle:CubicBezierSegment
-                    Point1="294.393162393163,155.248659703745"
-                    Point2="298.393162393163,155.248659703745"
-                    Point3="298.393162393163,159.248659703745" />
+                    Point1="296.53601953602,155.816179432339"
+                    Point2="300.53601953602,155.816179432339"
+                    Point3="300.53601953602,159.816179432339" />
                   <mssgle:LineSegment
-                    End="298.393162393163,187.897435897436" />
+                    End="300.53601953602,188.611721611722" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9075,26 +9075,26 @@ where [refTable].[Empresa_Transporte] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="221.055555555556,114.897435897437"
+              EndConnector="223.198412698413,115.611721611722"
               Start="0,0"
-              End="221.055555555556,107.397435897437">
+              End="223.198412698413,108.111721611722">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,74.1383799585307" />
+                    End="0,74.6241447461068" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,74.1383799585307"
-                    Point2="0,78.1383799585307"
-                    Point3="4,78.1383799585307" />
+                    Point1="0,74.6241447461068"
+                    Point2="0,78.6241447461068"
+                    Point3="4,78.6241447461068" />
                   <mssgle:LineSegment
-                    End="217.055555555556,78.1383799585307" />
+                    End="219.198412698413,78.6241447461068" />
                   <mssgle:CubicBezierSegment
-                    Point1="217.055555555556,78.1383799585307"
-                    Point2="221.055555555556,78.1383799585307"
-                    Point3="221.055555555556,82.1383799585307" />
+                    Point1="219.198412698413,78.6241447461068"
+                    Point2="223.198412698413,78.6241447461068"
+                    Point3="223.198412698413,82.6241447461068" />
                   <mssgle:LineSegment
-                    End="221.055555555556,107.397435897437" />
+                    End="223.198412698413,108.111721611722" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9117,7 +9117,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
     design-time-name="Package\Poblar Clientes">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="117,42"
           Id="Package\Poblar Clientes\Ordenar"
@@ -9127,9 +9127,9 @@ where [refTable].[Empresa_Transporte] = ?</property>
           Id="Package\Poblar Clientes\Leer Excel"
           TopLeft="131.571428571429,31.9285714285714" />
         <NodeLayout
-          Size="217,42"
-          Id="Package\Poblar Clientes\Grabar Dim_Clientes"
-          TopLeft="84.3809523809524,274.857142857143" />
+          Size="151,42"
+          Id="Package\Poblar Clientes\Grabar Clientes"
+          TopLeft="117.880952380952,262.357142857143" />
         <NodeLayout
           Size="175,42"
           Id="Package\Poblar Clientes\Conversión de datos"
@@ -9153,33 +9153,29 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Poblar Clientes.Paths[Salida de conversión de datos]"
-          TopLeft="192.52380952381,227.333333333333">
+          TopLeft="192.77380952381,227.333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,47.5238095238097"
+              EndConnector="0,35.02380952381"
               Start="0,0"
-              End="0,40.0238095238097">
+              End="0,27.52380952381">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.0238095238097" />
+                    End="0,27.52380952381" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9201,9 +9197,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9223,7 +9217,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Poblar Clientes\Grabar Dim_Clientes">
+    design-time-name="Package\Poblar Clientes\Grabar Clientes">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9239,11 +9233,11 @@ where [refTable].[Empresa_Transporte] = ?</property>
     design-time-name="Package\Poblar Estado_Ordenes">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="168,42"
-          Id="Package\Poblar Estado_Ordenes\Destino de OLE DB"
-          TopLeft="130,309.285714285714" />
+          Size="191,42"
+          Id="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes"
+          TopLeft="123,308.785714285714" />
         <NodeLayout
           Size="117,42"
           Id="Package\Poblar Estado_Ordenes\Ordenar"
@@ -9258,26 +9252,24 @@ where [refTable].[Empresa_Transporte] = ?</property>
           TopLeft="134.428571428571,51" />
         <EdgeLayout
           Id="Package\Poblar Estado_Ordenes.Paths[Salida de conversión de datos]"
-          TopLeft="215.392857142857,259.142857142857">
+          TopLeft="217.642857142857,259.142857142857">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,50.1428571428572"
+              EndConnector="0,49.642857142857"
               Start="0,0"
-              End="0,42.6428571428572">
+              End="0,42.142857142857">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.6428571428572" />
+                    End="0,42.142857142857" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9299,9 +9291,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9323,16 +9313,14 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Poblar Estado_Ordenes\Destino de OLE DB">
+    design-time-name="Package\Poblar Estado_Ordenes\Grabar Estado_Ordenes">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9361,10 +9349,10 @@ where [refTable].[Empresa_Transporte] = ?</property>
     design-time-name="Package\Poblar Mercancia">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="168,42"
-          Id="Package\Poblar Mercancia\Destino de OLE DB"
+          Size="161,42"
+          Id="Package\Poblar Mercancia\Grabar Mercancia"
           TopLeft="105.833333333332,261.833333333334" />
         <NodeLayout
           Size="117,42"
@@ -9380,26 +9368,24 @@ where [refTable].[Empresa_Transporte] = ?</property>
           TopLeft="112.619047619047,26.0952380952381" />
         <EdgeLayout
           Id="Package\Poblar Mercancia.Paths[Salida de conversión de datos]"
-          TopLeft="189.25,223.833333333334">
+          TopLeft="187.499999999999,223.833333333334">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,38.0000000000001"
+              EndConnector="0,38"
               Start="0,0"
-              End="0,30.5000000000001">
+              End="0,30.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.5000000000001" />
+                    End="0,30.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9421,9 +9407,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9445,16 +9429,14 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Poblar Mercancia\Destino de OLE DB">
+    design-time-name="Package\Poblar Mercancia\Grabar Mercancia">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9485,8 +9467,8 @@ where [refTable].[Empresa_Transporte] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="174,42"
-          Id="Package\Poblar Ordenes\Grabar FACT_Orden"
+          Size="153,42"
+          Id="Package\Poblar Ordenes\Grabar Ordenes"
           TopLeft="60.7692307692307,470" />
         <NodeLayout
           Size="153,42"
@@ -9499,15 +9481,15 @@ where [refTable].[Empresa_Transporte] = ?</property>
         <NodeLayout
           Size="206,42"
           Id="Package\Poblar Ordenes\Búsqueda Tipo_Transporte"
-          TopLeft="686.703296703297,363.626373626373" />
+          TopLeft="650.274725274726,362.912087912087" />
         <NodeLayout
           Size="175,42"
           Id="Package\Poblar Ordenes\Búsqueda Mercancia"
-          TopLeft="687.472527472527,258.681318681318" />
+          TopLeft="654.615384615384,256.538461538461" />
         <NodeLayout
           Size="205,42"
           Id="Package\Poblar Ordenes\Búsqueda Estado_Ordenes"
-          TopLeft="325,362.857142857143" />
+          TopLeft="322.857142857143,356.428571428572" />
         <NodeLayout
           Size="173,42"
           Id="Package\Poblar Ordenes\Columna derivada 1"
@@ -9519,11 +9501,11 @@ where [refTable].[Empresa_Transporte] = ?</property>
         <NodeLayout
           Size="159,42"
           Id="Package\Poblar Ordenes\Búsqueda Puerto"
-          TopLeft="683.571428571429,35.8241758241759" />
+          TopLeft="660,24.3956043956045" />
         <NodeLayout
           Size="197,42"
           Id="Package\Poblar Ordenes\Búsqueda Fecha_Factura"
-          TopLeft="319.285714285714,142.857142857142" />
+          TopLeft="314.285714285714,134.285714285713" />
         <NodeLayout
           Size="164,42"
           Id="Package\Poblar Ordenes\Columna derivada"
@@ -9535,140 +9517,140 @@ where [refTable].[Empresa_Transporte] = ?</property>
         <NodeLayout
           Size="191,42"
           Id="Package\Poblar Ordenes\Búsqueda Fecha_Orden"
-          TopLeft="684.010989010989,142.967032967032" />
+          TopLeft="654.010989010989,141.538461538461" />
         <NodeLayout
           Size="160,42"
           Id="Package\Poblar Ordenes\Búsqueda Cliente"
           TopLeft="320.714285714286,30" />
         <EdgeLayout
           Id="Package\Poblar Ordenes.Paths[Salida de entradas coincidentes de búsqueda4]"
-          TopLeft="501.142857142857,278.554945054944">
+          TopLeft="501.142857142857,277.483516483516">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="186.32967032967,0"
+              EndConnector="153.472527472527,0"
               Start="0,0"
-              End="178.82967032967,0">
+              End="145.972527472527,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="178.82967032967,0" />
+                    End="145.972527472527,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-10.404188272665,5,199.638046875,12.1953125"
+              BoundingBox="-26.8327597012365,5,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Poblar Ordenes.Paths[Salida de entradas coincidentes de búsqueda3]"
-          TopLeft="414.714285714286,184.857142857142">
+          TopLeft="412.214285714286,176.285714285713">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,71.5714285714282"
+              EndConnector="0,80.1428571428576"
               Start="0,0"
-              End="0,64.0714285714282">
+              End="0,72.6428571428576">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,64.0714285714282" />
+                    End="0,72.6428571428576" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-99.8190234375,25.9380580357141,199.638046875,12.1953125"
+              BoundingBox="-99.8190234375,30.2237723214288,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Poblar Ordenes.Paths[Salida de entradas coincidentes de búsqueda2]"
-          TopLeft="684.010989010989,163.912087912087">
+          TopLeft="654.010989010989,158.912087912087">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-167.725274725275,0"
+              EndConnector="-142.725274725275,0"
               Start="0,0"
-              End="-160.225274725275,0">
+              End="-135.225274725275,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-160.225274725275,0" />
+                    End="-135.225274725275,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-179.931660800138,5,199.638046875,12.1953125"
+              BoundingBox="-167.431660800137,5,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Poblar Ordenes.Paths[Salida de entradas coincidentes de búsqueda1]"
-          TopLeft="763.071428571429,77.8241758241759">
+          TopLeft="739.5,66.3956043956045">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="16.4395604395608,65.1428571428566"
+              EndConnector="10.0109890109885,75.1428571428561"
               Start="0,0"
-              End="16.4395604395608,57.6428571428566">
+              End="10.0109890109885,67.6428571428561">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.5714285714283" />
+                    End="0,33.5714285714281" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,28.5714285714283"
-                    Point2="0,32.5714285714283"
-                    Point3="4,32.5714285714283" />
+                    Point1="0,33.5714285714281"
+                    Point2="0,37.5714285714281"
+                    Point3="4,37.5714285714281" />
                   <mssgle:LineSegment
-                    End="12.4395604395608,32.5714285714283" />
+                    End="6.01098901098851,37.5714285714281" />
                   <mssgle:CubicBezierSegment
-                    Point1="12.4395604395608,32.5714285714283"
-                    Point2="16.4395604395608,32.5714285714283"
-                    Point3="16.4395604395608,36.5714285714283" />
+                    Point1="6.01098901098851,37.5714285714281"
+                    Point2="10.0109890109885,37.5714285714281"
+                    Point3="10.0109890109885,41.5714285714281" />
                   <mssgle:LineSegment
-                    End="16.4395604395608,57.6428571428566" />
+                    End="10.0109890109885,67.6428571428561" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-91.5992432177196,37.5714285714283,199.638046875,12.1953125"
+              BoundingBox="-94.8135289320058,42.5714285714281,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Poblar Ordenes.Paths[Salida de entradas coincidentes de búsqueda]"
-          TopLeft="480.714285714286,53.912087912088">
+          TopLeft="480.714285714286,48.1978021978022">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="202.857142857143,0"
+              EndConnector="179.285714285714,0"
               Start="0,0"
-              End="195.357142857143,0">
+              End="171.785714285714,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="195.357142857143,0" />
+                    End="171.785714285714,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-2.14045200892851,5,199.638046875,12.1953125"
+              BoundingBox="-13.9261662946428,5,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9786,109 +9768,109 @@ where [refTable].[Empresa_Transporte] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Poblar Ordenes.Paths[Salida de entradas coincidentes de búsqueda8]"
-          TopLeft="330.769230769231,491.769230769231">
+          TopLeft="330.769230769231,491.76923076923">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-95.9999999999999,0"
+              EndConnector="-117,0"
               Start="0,0"
-              End="-88.4999999999999,0">
+              End="-109.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-88.4999999999999,0" />
+                    End="-109.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-144.0690234375,5,199.638046875,12.1953125"
+              BoundingBox="-154.5690234375,5,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Poblar Ordenes.Paths[Salida de entradas coincidentes de búsqueda7]"
-          TopLeft="424.134615384615,404.857142857143">
+          TopLeft="423.063186813187,398.428571428572">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,66.6813186813186"
+              EndConnector="0,73.1098901098894"
               Start="0,0"
-              End="0,59.1813186813186">
+              End="0,65.6098901098894">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,59.1813186813186" />
+                    End="0,65.6098901098894" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-99.8190234375,23.4930030906593,199.638046875,12.1953125"
+              BoundingBox="-99.8190234375,26.7072888049447,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Poblar Ordenes.Paths[Salida de entradas coincidentes de búsqueda6]"
-          TopLeft="686.703296703297,384.241758241758">
+          TopLeft="650.274725274726,380.670329670329">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-156.703296703297,0"
+              EndConnector="-122.417582417583,0"
               Start="0,0"
-              End="-149.203296703297,0">
+              End="-114.917582417583,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-149.203296703297,0" />
+                    End="-114.917582417583,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-174.420671789149,5,199.638046875,12.1953125"
+              BoundingBox="-157.277814646291,5,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Poblar Ordenes.Paths[Salida de entradas coincidentes de búsqueda5]"
-          TopLeft="774.972527472527,300.681318681318">
+          TopLeft="742.115384615384,298.538461538461">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="14.7307692307695,62.9450549450549"
+              EndConnector="11.1593406593416,64.3736263736264"
               Start="0,0"
-              End="14.7307692307695,55.4450549450549">
+              End="11.1593406593416,56.8736263736264">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27.4725274725274" />
+                    End="0,28.1868131868132" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,27.4725274725274"
-                    Point2="0,31.4725274725274"
-                    Point3="4,31.4725274725274" />
+                    Point1="0,28.1868131868132"
+                    Point2="0,32.1868131868132"
+                    Point3="4,32.1868131868132" />
                   <mssgle:LineSegment
-                    End="10.7307692307695,31.4725274725274" />
+                    End="7.15934065934164,32.1868131868132" />
                   <mssgle:CubicBezierSegment
-                    Point1="10.7307692307695,31.4725274725274"
-                    Point2="14.7307692307695,31.4725274725274"
-                    Point3="14.7307692307695,35.4725274725274" />
+                    Point1="7.15934065934164,32.1868131868132"
+                    Point2="11.1593406593416,32.1868131868132"
+                    Point3="11.1593406593416,36.1868131868132" />
                   <mssgle:LineSegment
-                    End="14.7307692307695,55.4450549450549" />
+                    End="11.1593406593416,56.8736263736264" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-92.4536388221153,36.4725274725274,199.638046875,12.1953125"
+              BoundingBox="-94.2393531078292,37.1868131868132,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9896,7 +9878,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Poblar Ordenes\Grabar FACT_Orden">
+    design-time-name="Package\Poblar Ordenes\Grabar Ordenes">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10132,10 +10114,10 @@ where [refTable].[Empresa_Transporte] = ?</property>
     design-time-name="Package\Poblar Puertos">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="168,42"
-          Id="Package\Poblar Puertos\Destino de OLE DB"
+          Size="150,42"
+          Id="Package\Poblar Puertos\Grabar Puertos"
           TopLeft="121.333333333333,286.666666666667" />
         <NodeLayout
           Size="117,42"
@@ -10151,7 +10133,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
           TopLeft="123,23.5" />
         <EdgeLayout
           Id="Package\Poblar Puertos.Paths[Salida de conversión de datos]"
-          TopLeft="204.416666666667,234.666666666667">
+          TopLeft="199.916666666667,234.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10168,9 +10150,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10192,9 +10172,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10216,16 +10194,14 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Poblar Puertos\Destino de OLE DB">
+    design-time-name="Package\Poblar Puertos\Grabar Puertos">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10254,14 +10230,14 @@ where [refTable].[Empresa_Transporte] = ?</property>
     design-time-name="Package\Poblar Tipo_Transporte">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="117,42"
           Id="Package\Poblar Tipo_Transporte\Ordenar"
           TopLeft="114,114.333333333333" />
         <NodeLayout
-          Size="168,42"
-          Id="Package\Poblar Tipo_Transporte\Destino de OLE DB"
+          Size="192,42"
+          Id="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte"
           TopLeft="83.1666666666667,278.5" />
         <NodeLayout
           Size="164,42"
@@ -10290,9 +10266,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10314,40 +10288,36 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Poblar Tipo_Transporte.Paths[Salida de columna derivada]"
-          TopLeft="169.5,241.333333333333">
+          TopLeft="175.5,241.333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37.1666666666667"
+              EndConnector="0,37.166666666667"
               Start="0,0"
-              End="0,29.6666666666667">
+              End="0,29.666666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.6666666666667" />
+                    End="0,29.666666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Poblar Tipo_Transporte\Destino de OLE DB">
+    design-time-name="Package\Poblar Tipo_Transporte\Grabar Tipo_Transporte">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10376,7 +10346,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
     design-time-name="Package\Poblar Transportes">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="153,42"
           Id="Package\Poblar Transportes\Origen de Excel"
@@ -10386,8 +10356,8 @@ where [refTable].[Empresa_Transporte] = ?</property>
           Id="Package\Poblar Transportes\Ordenar"
           TopLeft="180.785714285714,100.214285714286" />
         <NodeLayout
-          Size="168,42"
-          Id="Package\Poblar Transportes\Destino de OLE DB"
+          Size="170,42"
+          Id="Package\Poblar Transportes\Grabar Transportes"
           TopLeft="153,246.166666666667" />
         <NodeLayout
           Size="175,42"
@@ -10412,14 +10382,12 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Poblar Transportes.Paths[Salida de conversión de datos]"
-          TopLeft="236,217.666666666667">
+          TopLeft="236.5,217.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10436,9 +10404,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10460,9 +10426,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10482,7 +10446,7 @@ where [refTable].[Empresa_Transporte] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Poblar Transportes\Destino de OLE DB">
+    design-time-name="Package\Poblar Transportes\Grabar Transportes">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
